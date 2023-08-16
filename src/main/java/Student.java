@@ -1,11 +1,13 @@
+import java.util.ArrayList;
+
 public class Student {
     private long id;
     private String name;
-    private int[] grades;
+    private ArrayList<Double> grades = new ArrayList<>();
 
     public Student() {}
 
-    public Student(long id, String name, int[] grades){
+    public Student(long id, String name, ArrayList<Double> grades){
         this.id = id;
         this.name = name;
         this.grades = grades;
@@ -18,7 +20,7 @@ public class Student {
     public String getName() {
         return this.name;
     }
-    public int[] getGrades() {
+    public ArrayList<Double> getGrades() {
         return this.grades;
     }
     //setters
@@ -28,7 +30,7 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
-    public void setGrades(int[] grades) {
+    public void setGrades(ArrayList<Double> grades) {
         this.grades = grades;
     }
 }
